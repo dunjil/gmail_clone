@@ -10,7 +10,6 @@ class _MailScreenState extends State<MailScreen> {
   ScrollController? _scrollViewController;
   bool _showAppbar = true;
   bool isScrollingDown = false;
-  int selectedIndex = 0;
 
   @override
   void initState() {
@@ -75,11 +74,12 @@ class _MailScreenState extends State<MailScreen> {
             color: Color(0XFFC4E1F6),
             boxShadow: [
               BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 1,
-                blurRadius: 10,
-                offset: Offset(0, 1.5), // changes position of shadow
-              ),
+                  color: Colors.grey.withOpacity(0.6),
+                  //spreadRadius: 1,
+                  blurRadius: 10,
+                  offset: Offset(0, 0.5),
+                  blurStyle: BlurStyle.solid // changes position of shadow
+                  ),
             ],
           ),
           width: _showAppbar
@@ -113,7 +113,7 @@ class _MailScreenState extends State<MailScreen> {
                         style: kBodyTextStyle.copyWith(
                             fontSize: ScreenUtil().setSp(13),
                             color: kBlackColor,
-                            fontWeight: FontWeight.w400),
+                            fontWeight: FontWeight.w500),
                       ))
                     ],
                   ),
@@ -191,66 +191,6 @@ class _MailScreenState extends State<MailScreen> {
               ),
             ],
           ),
-        ),
-        bottomNavigationBar: NavigationBarTheme(
-          data: NavigationBarThemeData(
-              indicatorColor: kBgColor,
-              labelTextStyle: MaterialStateProperty.all(
-                  kBodyTextStyle.copyWith(fontSize: ScreenUtil().setSp(14)))),
-          child: NavigationBar(
-              backgroundColor: kBgColor2,
-              selectedIndex: selectedIndex,
-              onDestinationSelected: (index) => setState(() {
-                    selectedIndex = index;
-                  }),
-              destinations: [
-                NavigationDestination(
-                    selectedIcon: Badge(
-                      shape: BadgeShape.square,
-                      padding: EdgeInsets.symmetric(
-                          horizontal: ScreenUtil().setWidth(6.0),
-                          vertical: ScreenUtil().setHeight(2.0)),
-                      badgeColor: Colors.red.shade900,
-                      position: BadgePosition.topEnd(),
-                      borderRadius:
-                          BorderRadius.circular(ScreenUtil().radius(6)),
-                      badgeContent: Text(
-                        '23',
-                        style: kBodyTextStyle.copyWith(
-                            color: kWhiteColor,
-                            fontSize: ScreenUtil().setSp(9),
-                            fontWeight: FontWeight.w500),
-                      ),
-                      child: Icon(Icons.email),
-                    ),
-                    icon: Badge(
-                      shape: BadgeShape.square,
-                      padding: EdgeInsets.symmetric(
-                          horizontal: ScreenUtil().setWidth(6.0),
-                          vertical: ScreenUtil().setHeight(2.0)),
-                      badgeColor: Colors.red.shade900,
-                      position: BadgePosition.topEnd(),
-                      borderRadius:
-                          BorderRadius.circular(ScreenUtil().radius(6)),
-                      badgeContent: Text(
-                        '23',
-                        style: kBodyTextStyle.copyWith(
-                            color: kWhiteColor,
-                            fontSize: ScreenUtil().setSp(9),
-                            fontWeight: FontWeight.w500),
-                      ),
-                      child: Icon(Icons.email_outlined),
-                    ),
-                    label: 'Mail'),
-                NavigationDestination(
-                    tooltip: "23",
-                    selectedIcon: Icon(
-                      Icons.videocam,
-                      size: ScreenUtil().setWidth(20),
-                    ),
-                    icon: Icon(Icons.videocam_outlined),
-                    label: 'Meet'),
-              ]),
         ),
       );
     });

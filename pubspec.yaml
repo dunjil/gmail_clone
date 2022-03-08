@@ -19,9 +19,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_launcher_icons:
   flutter_screenutil:
+  carousel_slider:
+  smooth_page_indicator:
   badges: ^2.0.2
 #  google_fonts:
   provider:
+  flutter_svg:
 
 dev_dependencies:
   flutter_test:

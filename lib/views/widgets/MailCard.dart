@@ -58,7 +58,7 @@ class MailCard extends StatelessWidget {
                               child: Icon(
                                 Icons.label_important,
                                 size: ScreenUtil().setWidth(18),
-                                color: Colors.blue.shade600,
+                                color: Color(0XFF1B6DF4),
                               ),
                             ),
                             TextSpan(

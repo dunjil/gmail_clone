@@ -3,6 +3,9 @@ export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:flutter/services.dart';
 export 'package:provider/provider.dart';
 export 'package:badges/badges.dart';
+export 'package:flutter_svg/flutter_svg.dart';
+export 'package:carousel_slider/carousel_slider.dart';
+export 'package:smooth_page_indicator/smooth_page_indicator.dart';
 //Screens
 export '../views/MailScreen.dart';
 export '../views/ScreenNavigation.dart';

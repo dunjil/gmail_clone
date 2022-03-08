@@ -22,8 +22,11 @@ class GMailClone extends StatelessWidget {
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(primaryColor: kWhiteColor, fontFamily: 'Roboto'),
-          home: MailScreen(),
+          theme: ThemeData(
+              primaryColor: kWhiteColor,
+              fontFamily: 'Roboto',
+              accentColor: Colors.grey.shade300),
+          home: NavigationScreen(),
         ),
       ),
     );
