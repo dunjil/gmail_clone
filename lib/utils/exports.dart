@@ -16,6 +16,9 @@ export '../views/SplashScreen.dart';
 export '../views/widgets/MeetButton.dart';
 export '../views/widgets/MeetOutlinedButton.dart';
 export '../views/widgets/MailCard.dart';
+export '../views/widgets/DrawerCard.dart';
+export '../views/widgets/NavigationDrawerWidget.dart';
+export '../views/widgets/DrawerTitle.dart';
 
 //Models
 export 'package:gmail_clone/models/MailModel.dart';

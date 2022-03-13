@@ -7,10 +7,14 @@ const kMainBlackColor = Color(0XFF000000);
 const kDescriptionTextColor = Color(0XFF454746);
 const kDotsColor = Color(0XFFD2D2D2);
 const kBgColor = Color(0XFFC3E7FF);
+const kTunaColor = Color(0XFF343435);
 const kBgColor2 = Color(0XFFEEF2FB);
 const kRedColor = Color(0XFFB3261C);
 const kBlueColor = Color(0XFF0B57CF);
 const kButtonOutlineColor = Color(0XFF333635);
+const kDrawerColor = Color(0XFFF3F4FB);
+const kCrimsonRedColor = Color(0XFFE81014);
+const kSailColor = Color(0XFFC4E2F9);
 
 //Body Text style
 final kBodyTextStyle = TextStyle(

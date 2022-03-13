@@ -157,9 +157,12 @@ class _MailScreenState extends State<MailScreen> {
                                   AssetImage('./assets/my_img.jpg'),
                             ),
                           ),
-                          prefixIcon: Icon(
-                            Icons.menu,
-                            color: kBlackColor,
+                          prefixIcon: IconButton(
+                            onPressed: () => Scaffold.of(context).openDrawer(),
+                            icon: Icon(
+                              Icons.menu,
+                              color: kBlackColor,
+                            ),
                           ),
                           hintText: 'Search in emails',
                           contentPadding: EdgeInsets.all(15),

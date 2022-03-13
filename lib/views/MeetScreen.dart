@@ -16,9 +16,12 @@ class _MeetScreenState extends State<MeetScreen> {
       appBar: AppBar(
         backgroundColor: kWhiteColor,
         toolbarHeight: ScreenUtil().setHeight(60),
-        leading: Icon(
-          Icons.menu,
-          color: kBlackColor,
+        leading: IconButton(
+          onPressed: () => Scaffold.of(context).openDrawer(),
+          icon: Icon(
+            Icons.menu,
+            color: kBlackColor,
+          ),
         ),
         actions: [
           Padding(

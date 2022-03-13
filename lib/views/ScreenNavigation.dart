@@ -11,6 +11,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavigationDrawerWidget(),
       body: screens[selectedIndex],
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
